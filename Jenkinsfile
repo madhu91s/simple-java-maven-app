@@ -14,6 +14,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+				sh 'mvn clean install -DproxySet=true -DproxyHost=http://172.20.27.231 -DproxyPort=3128'
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
