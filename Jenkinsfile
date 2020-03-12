@@ -1,7 +1,7 @@
 pipeline {
     environment {
-		HTTP_PROXY="172.20.27.231:3128"
-		HTTPS_PROXY="172.20.27.231:3128"
+		HTTP_PROXY="http://172.20.27.231:3128"
+		HTTPS_PROXY="http://172.20.27.231:3128"
 	}
 	agent {
         
