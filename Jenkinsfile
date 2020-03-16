@@ -1,8 +1,8 @@
 pipeline {
-    /*environment {
+    environment {
 		HTTP_PROXY="http://172.20.27.231:3128"
 		HTTPS_PROXY="http://172.20.27.231:3128"
-	}*/
+	}
 	agent {
         
 		docker {
