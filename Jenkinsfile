@@ -25,8 +25,9 @@ pipeline {
 		}
         stage('Build') { 
             steps {
-			
-                sh 'mvn -B -DskipTests clean package' 
+				withMaven(globalMavenSettingsConfig: '1e257ac6-8f8f-49dc-ae30-fe8d573c599a') {
+					sh 'mvn -B -DskipTests clean package' 
+				}
             }
         }
     }
