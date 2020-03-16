@@ -11,9 +11,7 @@ pipeline {
         }
 		
     }
-	tools{
-		maven 'MavenTest'
-	}
+
     stages {
 		stage('Initialize'){
 		sh '''
